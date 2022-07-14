@@ -1,11 +1,13 @@
 import React from 'react';
-import { Layout } from '../components';
+import {
+  Layout,
+  QueryResult,
+} from '../components';
 import {
   gql,
   useQuery,
 } from '@apollo/client';
 import TrackCard from '../containers/track-card';
-import  QueryResult from '../components/query-result';
 
 export const TRACKS = gql`
   query GetTracks {
